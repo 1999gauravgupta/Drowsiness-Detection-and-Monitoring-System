@@ -1,0 +1,17 @@
+
+<div id="chart_div" style="width: 1080px; height: 680px;">
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable( gline );
+
+        var options = {
+          title: 'Summary'
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+</div>

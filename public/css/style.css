@@ -1,0 +1,296 @@
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .footer {
+    position: fixed;
+    padding-top: 12px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#e6f2ff;
+    color:black;
+    text-align: center;
+ }
+
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+.button {
+  display: inline-block;
+  border: 0;
+  background:#99ccff;
+  padding: 15px 30px;
+  color:#FFF;
+  font-family: "Lato", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 1.4px;
+  font-size: 18px;
+  border-radius: 6px;
+  animation: jiggle 2s infinite ease-in;
+  
+}
+
+@keyframes jiggle {
+  45%, 65% {
+    transform: scale(1.0, 1.0)
+  }
+  50% {
+    transform: scale(1.1, 0.9)
+  }
+  55% {
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+  60% {
+    transform: scale(1.0, 1.0) translate(0, -5px)
+  }
+}
+
+@import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+$shadow-color: #23203b;
+$input-color: lighten(#AB9E95, 10%);
+$input-border-color: #5E5165;
+$button-background-color: #27AE60;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  background-image: url("../images/truck.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+  
+  background-repeat:no-repeat;
+}
+
+
+
+body, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@mixin normalize-input {
+  display: block;
+  width: auto;
+  height: auto;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  border-radius: 0px;
+}
+
+.login {
+  padding: 15px;
+  width: 400px;
+  min-height: 400px;
+  margin: 2% auto 0 auto;
+
+  .heading {
+    text-align: center;
+    margin-top: 1%;
+
+    h2 {
+      font-size: 3em;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding-bottom: 5px;
+      text-shadow: 1px 1px 3px $shadow-color;
+    }
+  }
+
+  form {
+    .input-group {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:last-of-type {
+        border-top: none;
+      }
+
+      span {
+        background: transparent;
+        min-width: 53px;
+        border: none;
+
+        i {
+          font-size: 1.5em;
+          color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+    input.form-control {
+      @include normalize-input;
+
+      padding: 10px;
+      font-size: 1.6em;
+      width: 100%;
+      background: transparent;
+      color: $input-color;
+
+      &:focus {
+        border: none;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      background: $button-background-color;
+      border: none;
+      font-size: 1.6em;
+      font-weight: 300;
+      padding: 5px 0;
+      width: 100%;
+      border-radius: 3px;
+      color: lighten($button-background-color, 40%);
+      border-bottom: 4px solid darken($button-background-color, 10%);
+
+      &:hover {
+        background: tint($button-background-color, 4%);
+        -webkit-animation: hop 1s;
+        animation: hop 1s;
+      }
+    }
+  }
+}
+
+.float {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.float:hover, .float:focus, .float:active {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1500px) {
+}
+
+@media only screen and (max-width : 1200px) {
+  .login {
+    width: 600px;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width : 1100px) {
+  .login {
+    margin-top: 2%;
+    width: 600px;
+    font-size: 1.7em;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .login {
+    margin-top: 1%;
+    width: 550px;
+    font-size: 1.7em;
+    min-height: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .login {
+    margin-top: 0;
+    width: 500px;
+    font-size: 1.3em;
+    min-height: 0;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  .login {
+    margin-top: 0;
+    width: 200px;
+    font-size: 0.7em;
+    min-height: 0;
+  }
+}
+.card
+{
+  padding: 5px;
+}
+.navbar-left
+{
+  text-align: left;
+}
+
+.text-white
+{
+  color:#fff;
+}
+.bit
+{
+  padding-left: 8px;
+  padding-top: 15px;
+}
+.team
+{
+  color: #fff;
+}
+
+.padblack
+{
+  color: #000;
+  padding-left: 5px ;
+}
+#textbox
+{
+  height:30px;
+  width:30px;
+
+}
+
+.btn-align
+{
+  margin-top: 10px;
+  margin-left: 400px;
+}
+
+.jumbotron
+{
+  opacity: 0.7;
+}
