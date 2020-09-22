@@ -19,9 +19,9 @@ Whenever the driver yawns or closes his eyes for more than threshold time then t
 ## Team
 We are a group of 5 people working together to solve this problem in an economically feasible manner.
 - Vineet Jha: Team Leader and Manager
-- Gaurav Gupta: Lead Machine Learning Engineer and Database Administrator and Analytics Head
-- Rishabh Sharma: Lead Frontend Engineer
-- Deepak Malik: Lead Backend Engineer
+- Gaurav Gupta: Computer Vision Engineer
+- Rishabh Sharma: Frontend Engineer
+- Deepak Malik: Backend Engineer
 
 ## Versions
 The work on this project is still ongoing and till far these versions have been released:
