@@ -1,5 +1,7 @@
 # Driver Drowsiness Detection and Monitoring System
 
+Demo Video: https://www.youtube.com/watch?v=rNkG3pyj1iY
+
 ## Context
 Driving when you are sleepy & exhausted? Well, you're as much of a safety hazard as a drunk driver. “Drowsy driving” occurs when a person who is operating a motor vehicle is too tired to remain alert. The effect of drowsiness is similar to alcohol; it will make your driver inputs(steering, acceleration, and braking) poorer, destroy your reaction time and blur your thought processes.
 
@@ -46,3 +48,15 @@ Currently we are trying to make the code more general and implementing SOS and l
 
 ## Conclusion
 This model, if implemented correctly on a large scale, can prevent losses in road accidents due to drowsy driving and save thousands of lives. The system can be installed in different vehicles whether those are buses , trucks, cars or even in the railways. This model includes the direct influence of monitoring the drivers' way of correctly running the vehicle which will ultimately result in reduction of roadside accidents due to drowsy driving and maintaining the records of drivers past records which will ultimately lead to streamlined traffic flow.
+
+## Screenshots
+
+<div>
+  <img src="https://user-images.githubusercontent.com/31289268/93995325-7a869a80-fdae-11ea-83c7-5b9a7e12f87a.png" width=300 height=300>
+  <img src="https://user-images.githubusercontent.com/31289268/93995336-807c7b80-fdae-11ea-8779-d04f6076787a.png" width=300 height=300>
+  <img src="https://user-images.githubusercontent.com/31289268/93995344-83776c00-fdae-11ea-8a53-327af2d782b6.png" width=300 height=300>
+  <img src="https://user-images.githubusercontent.com/31289268/93995351-85d9c600-fdae-11ea-9a62-4833fc2a579d.png" width=300 height=300>
+  <img src="https://user-images.githubusercontent.com/31289268/93995358-883c2000-fdae-11ea-8c91-53cc91ea01cb.png" width=300 height=300>
+  <img src="https://user-images.githubusercontent.com/31289268/93995364-8b371080-fdae-11ea-85c0-a055daa6d374.png" width=300 height=300>
+  <img src="https://user-images.githubusercontent.com/31289268/93995378-8d996a80-fdae-11ea-804a-855a16db33ae.png" width=300 height=300>
+</div>
